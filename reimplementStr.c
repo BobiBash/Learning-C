@@ -5,11 +5,14 @@ int strlength(char *str);
 void strcopy(char *str1, char *str2);
 void my_strcat(char *str1, char *str2);
 int my_strcmp(char *str1, char *str2);
+int my_strncmp(char *str1, char *str2);
 
 int main () {
 
     char test1[] = "abc";
     char test2[] = "abd";
+    char test3[] = "bbc";
+    char test4[] = "abd";
 
     char short_str[] = "cat";
     char long_str[] = "catalog";
@@ -17,8 +20,8 @@ int main () {
     char src[] = "abcd";
     char dest[] = "abcd";
     int result = my_strcmp(short_str, long_str);
-    int result2 = my_strcmp(test1, test2);
-    int result3 = my_strcmp(src, dest);
+    int result2 = my_strncmp(test1, test2);
+    int result3 = my_strncmp(test3, test4);
     if (result3 > 0) {
         printf("string 1 is bigger than string 2\n");
     }
@@ -82,4 +85,19 @@ int my_strcmp(char *str1, char *str2) {
 
     return 0;
 
+}
+
+int my_strncmp(char *str1, char *str2) {
+
+
+    printf("%c\n", str1[0]);
+    printf("%c\n", str2[0]);
+
+    if (str1[0] < str2[0]) {
+        return 1;
+    } else if (str1[0] > str2[0]) {
+        return -1;
+    }
+
+    return 0;
 }
