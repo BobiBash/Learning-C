@@ -1,0 +1,27 @@
+5
+Ivan Ivanov
+The Lost City
+1995
+180
+Artistic
+Maria Georgieva
+Quantum Physics
+2003
+450
+Scientific
+Petar Petrov
+Red Dawn
+1988
+95
+Artistic
+Ana Dimitrova
+Cooking 101
+2011
+320
+Scientific
+George Stoev
+The Last War
+1975
+210
+Artistic
+190
